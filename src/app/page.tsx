@@ -1,13 +1,12 @@
 'use client';
 import NavBar from '../components/navbar';
 import Header from '../components/header';
-
-const pagePaddings = [4, 5, 5, 32];
+import Exclamation from '../components/exclamation';
 
 export default function Home() {
   return (
     <main>
-      <nav className='relative z-10' >
+      <nav className="relative z-10">
         <NavBar
           items={[
             { text: 'Projects', href: '#projects' },
@@ -17,11 +16,17 @@ export default function Home() {
           ]}
         />
       </nav>
-      <header
-        // bgGradient={'linear(to-b, brand.back 50%, brand.white 100%)'}
-      >
+      <header>
         <Header />
       </header>
+      <section>
+        <Exclamation>
+          We are a creative agency with experienced professionals and promising
+          talents create products that bring impressive results for our clients.
+          Every project is implemented comprehensively — from concept to
+          production.
+        </Exclamation>
+      </section>
     </main>
   );
 }

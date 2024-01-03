@@ -27,11 +27,11 @@ const NavBar = ({ items }: NavBarProps) => {
           <div className="flex-1" />
           <ul className="hidden md:flex md:items-center">
             {items.map((el, i) => (
-              <li key={i} className="px-4 text-xl">
+              <li key={i} className="px-3 text-lg">
                 <Link
                   href={el.href}
                   onClick={handleLinkClick}
-                  className="text-blueMain hover:text-orange"
+                  className="text-blueMain hover:text-orange uppercase"
                 >
                   {el.text}
                 </Link>
@@ -76,7 +76,7 @@ const NavBar = ({ items }: NavBarProps) => {
                     key={i}
                     href={el.href}
                     onClick={handleLinkClick}
-                    className="text-blueMain hover:text-orange text-5xl my-5"
+                    className="text-blueMain hover:text-orange text-3xl my-5 uppercase"
                   >
                     {el.text}
                   </Link>
