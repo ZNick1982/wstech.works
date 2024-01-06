@@ -2,11 +2,12 @@ import React from 'react';
 
 export type LogoProps = {
   color?: string;
+  className?: string;
 };
 
-const Logo = ({ color = '#323F90' }: LogoProps) => {
+const Logo = ({ color = '#323F90', className = 'w-40 sm:w-60 md:w-72' }: LogoProps) => {
   return (
-    <div className='w-40 sm:w-60 md:w-72'>
+    <div className={className}>
       <svg
         viewBox="0 0 295 58"
         fill="none"

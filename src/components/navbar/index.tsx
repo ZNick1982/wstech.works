@@ -19,8 +19,8 @@ const NavBar = ({ items }: NavBarProps) => {
 
   return (
     <div className="bg-back w-full flex justify-center">
-      <div className="max-w-screen-2xl w-full">
-        <div className="px-4 lg:px-32 pt-5 pb-5 flex items-center">
+      <div className="max-w-screen-xl w-full">
+        <div className="px-4 pt-5 pb-5 flex items-center">
           <Link href={'/'}>
             <Logo />
           </Link>
@@ -54,7 +54,7 @@ const NavBar = ({ items }: NavBarProps) => {
             </div>
           </div>
         </div>
-        <div className="px-4 lg:px-32">
+        <div className="px-4">
           <hr className="border-blueMain divide-y-0" />
         </div>
         <Transition
