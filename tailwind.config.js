@@ -8,6 +8,10 @@ module.exports = {
       width: {
         '1/2-2rem': 'calc(50% - 2rem)',
         '1/2-1rem': 'calc(50% - 1rem)',
+        '1/2-0.5rem': 'calc(50% - 0.5rem)',
+        '1/3-1rem': 'calc(33.333% - 1rem)',
+        '1/3-0.3rem': 'calc(33.333% - 0.333rem)',
+        '1/4-1rem': 'calc(25% - 1rem)',
       }
     },
     colors: {

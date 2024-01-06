@@ -1,17 +1,17 @@
 import React, { ReactNode } from 'react';
-import ProjectCard from './projectCard';
+import ApproachCard from './approachCard';
 
 type OurProjectsProps = {
   children: ReactNode;
 };
 
 const OurProjects = ({ children }: OurProjectsProps) => (
-  <div className="bg-back bg-opacity-50 w-full flex flex-col items-center relative md:bg-gradient-to-b md:from-white md:via-back md:to-white">
+  <div className="bg-white w-full flex flex-col items-center relative">
     <div className="max-w-screen-xl w-full flex flex-col px-4">
       <div className="flex justify-between">
         <h2 className="mt-20 mb-10 text-4xl uppercase text-blueMain text-left">
           <span className="text-orange">Our</span>
-          &nbsp;Projects
+          &nbsp;Approach
         </h2>
         <svg
           width="40"
@@ -19,7 +19,7 @@ const OurProjects = ({ children }: OurProjectsProps) => (
           viewBox="0 0 82 82"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className='mt-20'
+          className="mt-20"
         >
           <path
             fill-rule="evenodd"
@@ -29,7 +29,7 @@ const OurProjects = ({ children }: OurProjectsProps) => (
           />
         </svg>
       </div>
-      <div className="flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-center 2xl:gap-16 ">
+      <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-between xl:gap-2">
         {children}
       </div>
     </div>
@@ -37,4 +37,4 @@ const OurProjects = ({ children }: OurProjectsProps) => (
 );
 
 export default OurProjects;
-export { ProjectCard };
+export { ApproachCard };
