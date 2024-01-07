@@ -8,6 +8,7 @@ import OurProjects, { ProjectCard } from '../components/ourProjects';
 import OurApproach, { ApproachCard } from '../components/ourApproach';
 import OurExpertise, { ExpertiseLine } from '../components/ourExpertise';
 import OurTechnologies, { TechnologyLine } from '../components/ourTechnologies';
+import SoftDevDoneRight, { DevLine } from '../components/softDevDoneRight';
 import CompassIcon from '../../public/icons/compass.svg';
 import ChartIcon from '../../public/icons/chart.svg';
 import HorseIcon from '../../public/icons/horse.svg';
@@ -141,11 +142,50 @@ export default function Home() {
       </section>
       <section>
         <OurTechnologies>
-          <TechnologyLine number='1' techList={['PHP', 'Python', 'Java', 'Golang', '.NET', 'Node.JS']}>Backend</TechnologyLine>
-          <TechnologyLine number='2' techList={['React', 'Angular', 'Vue']}>Frontend</TechnologyLine>
-          <TechnologyLine number='3' techList={['React Native', 'Kotlin', 'Swift', 'Cordova']}>IOS/Android</TechnologyLine>
-          <TechnologyLine number='4' techList={['Figma', 'Adobe Photoshop', 'Adobe XD', 'Sketch']}>Design</TechnologyLine>
+          <TechnologyLine
+            number="1"
+            techList={['PHP', 'Python', 'Java', 'Golang', '.NET', 'Node.JS']}
+          >
+            Backend
+          </TechnologyLine>
+          <TechnologyLine number="2" techList={['React', 'Angular', 'Vue']}>
+            Frontend
+          </TechnologyLine>
+          <TechnologyLine
+            number="3"
+            techList={['React Native', 'Kotlin', 'Swift', 'Cordova']}
+          >
+            IOS/Android
+          </TechnologyLine>
+          <TechnologyLine
+            number="4"
+            techList={['Figma', 'Adobe Photoshop', 'Adobe XD', 'Sketch']}
+          >
+            Design
+          </TechnologyLine>
         </OurTechnologies>
+      </section>
+      <section>
+        <SoftDevDoneRight>
+          <DevLine number="/01" title="Real-Time Communication">
+            Our developers work within your nearshore time zone to allow for
+            real-time collaboration. We work to achieve a true "branch location"
+            feel. We infuse accountability and transparency into our model with
+            regular management and progress reports.
+          </DevLine>
+          <DevLine number="/02" title="Scalable Business Model">
+            We work with you to find the areas that are best suited to bring you
+            value. Based on your needs, our flexible business model gives you
+            the option to increase or decrease the size of your dedicated team
+            at any point of the lifecycle.
+          </DevLine>
+          <DevLine number="/03" title="You Own The Source Code">
+            Most software companies insist on owning their own source codes to
+            prevent their clients from seeking out other vendors or tools. Under
+            our agreement, you are the sole proprietor of the source code and
+            intellectual property.
+          </DevLine>
+        </SoftDevDoneRight>
       </section>
     </main>
   );
