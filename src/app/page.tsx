@@ -9,6 +9,7 @@ import OurApproach, { ApproachCard } from '../components/ourApproach';
 import OurExpertise, { ExpertiseLine } from '../components/ourExpertise';
 import OurTechnologies, { TechnologyLine } from '../components/ourTechnologies';
 import SoftDevDoneRight, { DevLine } from '../components/softDevDoneRight';
+import HeroLink from '../components/heroLink';
 import OurTeam from '../components/ourTeam';
 import CompassIcon from '../../public/icons/compass.svg';
 import ChartIcon from '../../public/icons/chart.svg';
@@ -203,6 +204,9 @@ export default function Home() {
           and user-centric solutions, making your online journey an
           unforgettable one.
         </OurTeam>
+      </section>
+      <section>
+        <HeroLink url='/'>Let`s talk</HeroLink>
       </section>
     </main>
   );
