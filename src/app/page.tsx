@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import NavBar from '../components/navbar';
 import Header from '../components/header';
 import Exclamation from '../components/exclamation';
@@ -6,13 +7,13 @@ import SoftEngDesign from '../components/softEngDesign';
 import OurProjects, { ProjectCard } from '../components/ourProjects';
 import OurApproach, { ApproachCard } from '../components/ourApproach';
 import OurExpertise, { ExpertiseLine } from '../components/ourExpertise';
+import OurTechnologies, { TechnologyLine } from '../components/ourTechnologies';
 import CompassIcon from '../../public/icons/compass.svg';
 import ChartIcon from '../../public/icons/chart.svg';
 import HorseIcon from '../../public/icons/horse.svg';
 import PaperIcon from '../../public/icons/paper.svg';
 import RocketIcon from '../../public/icons/rocket.svg';
 import WandIcon from '../../public/icons/wand.svg';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -137,6 +138,14 @@ export default function Home() {
             </p>
           </div>
         </OurExpertise>
+      </section>
+      <section>
+        <OurTechnologies>
+          <TechnologyLine number='1' techList={['PHP', 'Python', 'Java', 'Golang', '.NET', 'Node.JS']}>Backend</TechnologyLine>
+          <TechnologyLine number='2' techList={['React', 'Angular', 'Vue']}>Frontend</TechnologyLine>
+          <TechnologyLine number='3' techList={['React Native', 'Kotlin', 'Swift', 'Cordova']}>IOS/Android</TechnologyLine>
+          <TechnologyLine number='4' techList={['Figma', 'Adobe Photoshop', 'Adobe XD', 'Sketch']}>Design</TechnologyLine>
+        </OurTechnologies>
       </section>
     </main>
   );
