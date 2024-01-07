@@ -9,12 +9,14 @@ import OurApproach, { ApproachCard } from '../components/ourApproach';
 import OurExpertise, { ExpertiseLine } from '../components/ourExpertise';
 import OurTechnologies, { TechnologyLine } from '../components/ourTechnologies';
 import SoftDevDoneRight, { DevLine } from '../components/softDevDoneRight';
+import OurTeam from '../components/ourTeam';
 import CompassIcon from '../../public/icons/compass.svg';
 import ChartIcon from '../../public/icons/chart.svg';
 import HorseIcon from '../../public/icons/horse.svg';
 import PaperIcon from '../../public/icons/paper.svg';
 import RocketIcon from '../../public/icons/rocket.svg';
 import WandIcon from '../../public/icons/wand.svg';
+import TeamImage from '../../public/teamImage.png';
 
 export default function Home() {
   return (
@@ -186,6 +188,21 @@ export default function Home() {
             intellectual property.
           </DevLine>
         </SoftDevDoneRight>
+      </section>
+      <section>
+        <OurTeam image={TeamImage}>
+          Welcome to our web studio's powerhouse team, where brilliant
+          developers and creative designers converge to shape the digital
+          landscape through exceptional website and mobile app development. Our
+          developers, armed with the latest technologies and programming
+          expertise, transform ideas into seamless, high-performance websites
+          and apps that exceed expectations. Meanwhile, our imaginative
+          designers craft captivating user interfaces and visually stunning
+          experiences, ensuring your digital presence leaves a lasting
+          impression. Together, we synergize our talents to deliver innovative
+          and user-centric solutions, making your online journey an
+          unforgettable one.
+        </OurTeam>
       </section>
     </main>
   );
