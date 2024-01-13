@@ -20,7 +20,7 @@ const HeroLink = ({ url, children }: HeroLinkProps) => (
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_186_3685)">
+            <g clipPath="url(#clip0_186_3685)">
               <mask
                 id="mask0_186_3685"
                 style={{ maskType: 'luminance' }}
@@ -38,11 +38,11 @@ const HeroLink = ({ url, children }: HeroLinkProps) => (
               <g mask="url(#mask0_186_3685)">
                 <path
                   d="M0.510254 54.907H161.432"
-                  stroke-width="11.3148"
+                  strokeWidth="11.3148"
                 />
                 <path
                   d="M111.144 5.10791L160.939 54.9037L111.144 104.699"
-                  stroke-width="11.3148"
+                  strokeWidth="11.3148"
                 />
               </g>
             </g>

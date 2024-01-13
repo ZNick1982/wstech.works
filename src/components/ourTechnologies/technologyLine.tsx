@@ -16,7 +16,7 @@ const TechnologyLine = ({
       <span className="text-orange">{number}</span>
       <span className="pl-4 md:w-1/3">{children}</span>
       <div className='hidden md:flex md:items-center'>
-        {techList.map(s => <span className='mr-6 text-sm'>{s}</span>)}
+        {techList.map((s, i) => <span key={i} className='mr-6 text-sm'>{s}</span>)}
       </div>
       <div className="flex-1"></div>
       <div>
@@ -24,7 +24,7 @@ const TechnologyLine = ({
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
           className="w-6 h-6"
         >

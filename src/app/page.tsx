@@ -128,6 +128,12 @@ export default function Home() {
           <ExpertiseLine colorClass="text-secondBlue">
             Mobile Apps
           </ExpertiseLine>
+          <ExpertiseLine colorClass="text-secondBlue">
+            Cloud developement (Azure, GPC, Amazon)
+          </ExpertiseLine>
+          <ExpertiseLine colorClass="text-secondBlue">
+            Application Stack Migrations
+          </ExpertiseLine>
           <div className="w-full py-8 px-4 md:px-10 md:py-20">
             <p className="uppercase text-2xl text-blueMain">
               Each project is implemented{' '}
@@ -205,7 +211,7 @@ export default function Home() {
           unforgettable one.
         </OurTeam>
       </section>
-      <section>
+      <section id='contacts'>
         <HeroLink url='/'>Let`s talk</HeroLink>
       </section>
     </main>

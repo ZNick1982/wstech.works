@@ -22,8 +22,8 @@ const OurTechnologies = ({ children }: OurTechnologiesProps) => (
           className="mt-20"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M6.83339 71.6417V1.974H2.27783V79.4184H79.7223V74.8629H10.0546L79.0549 5.86242L75.8339 2.64115L6.83339 71.6417Z"
             fill="#323F90"
           />
