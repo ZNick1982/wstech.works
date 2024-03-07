@@ -13,11 +13,16 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
+    "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
     "framer-motion": "^10.16.5",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.69.3"
+    "react-hook-form": "^7.49.3",
+    "sass": "^1.69.3",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",
