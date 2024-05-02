@@ -184,7 +184,7 @@ export default function Home() {
         <SoftDevDoneRight>
           <DevLine number="/01" title="Real-Time Communication">
             Our developers work within your nearshore time zone to allow for
-            real-time collaboration. We work to achieve a true "branch location"
+            real-time collaboration. We work to achieve a true &quot;branch location&quot;
             feel. We infuse accountability and transparency into our model with
             regular management and progress reports.
           </DevLine>
@@ -204,7 +204,7 @@ export default function Home() {
       </section>
       <section>
         <OurTeam image={TeamImage}>
-          Welcome to our web studio's powerhouse team, where brilliant
+          Welcome to our web studio&apos;s powerhouse team, where brilliant
           developers and creative designers converge to shape the digital
           landscape through exceptional website and mobile app development. Our
           developers, armed with the latest technologies and programming

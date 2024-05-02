@@ -23,7 +23,7 @@ const Contacts = () => (
     </nav>
     <header>
       <Header>
-        let's work
+        let&apos;s work
         <br />
         together
       </Header>
