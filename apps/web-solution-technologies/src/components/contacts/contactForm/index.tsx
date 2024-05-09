@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Button from '../../button';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { cn } from '@/lib/utils';
+import { useReCaptcha } from "next-recaptcha-v3";
 
 type FormData = {
   name: string;
@@ -11,19 +12,34 @@ type FormData = {
   message: string;
 };
 
-const ContactForm = ({}) => {
+const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<FormData>();
+  const { executeRecaptcha } = useReCaptcha();
 
-  const onSubmit: SubmitHandler<FormData> = async (data) =>
-    new Promise((resolve, reject) =>
-      setTimeout(() => resolve(console.log(data)), 2000)
-    );
-  const [loading, setLoading] = useState(false);
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    const token = await executeRecaptcha("form_submit");
 
+    const payload = {
+      ...data,
+      token
+    };
+
+    const resp = await fetch('/api/send', {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      redirect: "follow", // manual, *follow, error
+      body: JSON.stringify(payload), // body data type must match "Content-Type" header
+    });
+    return resp.json(); // parses JSON response into native JavaScript objects
+  }
+  
   return (
     <div className="bg-white w-full flex flex-col items-center relative my-10">
       <div className="max-w-screen-xl w-full flex flex-col items-start justify-start px-4">

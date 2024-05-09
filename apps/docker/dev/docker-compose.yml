@@ -1,0 +1,32 @@
+services:
+  nginx:
+    build:
+      dockerfile: ../web-solution-technologies/docker/dev/nginx.dockerfile
+      context: ../../web-solution-technologies
+    ports:
+      - 8080:80
+  app:
+    build:
+      dockerfile: ../web-solution-technologies/docker/dev/app.dockerfile
+      context: ../../web-solution-technologies
+    expose:
+      - 3000:3000
+    environment:
+      - NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY=${GOOGLE_RECAPTCHA_SITE_KEY}
+      - NEXT_PUBLIC_GOOGLE_RECAPTCHA_SECRET_KEY=${GOOGLE_RECAPTCHA_SECRET_KEY}
+    volumes:
+      - ../../web-solution-technologies/:/app
+    command: npm run dev
+  api:
+    build:
+      dockerfile: ../messaging-web-service/docker/dockerfile
+      context: ../../messaging-web-service
+    expose:
+      - 3000:3000
+    environment:
+      - GOOGLE_RECAPTCHA_SITE_KEY=${GOOGLE_RECAPTCHA_SITE_KEY}
+      - GOOGLE_RECAPTCHA_SECRET_KEY=${GOOGLE_RECAPTCHA_SECRET_KEY}
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+    volumes:
+      - ../../messaging-web-service/:/api
+    command: npm run start:dev

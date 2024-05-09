@@ -6,14 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // async rewrites() {
-	// 	return [
-	// 		{
-	// 			source: '/api/:path*',
-	// 			destination: `${API_URL}/:path*`,
-	// 		},
-	// 	]
-	// },
+	env: {
+    NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY: process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY,
+  }
 }
 
 module.exports = nextConfig

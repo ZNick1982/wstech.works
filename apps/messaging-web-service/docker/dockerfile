@@ -1,0 +1,18 @@
+
+FROM node:20.8
+
+ENV GOOGLE_RECAPTCHA_SITE_KEY = ${GOOGLE_RECAPTCHA_SITE_KEY}
+ENV GOOGLE_RECAPTCHA_SECRET_KEY = ${GOOGLE_RECAPTCHA_SECRET_KEY}
+
+WORKDIR /api
+
+COPY package.json package.json
+COPY package-lock.json package-lock.json
+
+RUN npm i
+
+COPY . .
+
+CMD [ "npm", "start:prod" ]
+
+EXPOSE 3000

@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "workspace-root",
+			"path": "./"
+		},
+		{
+			"path": "./apps/web-solution-technologies"
+		},
+		{
+			"path": "./apps/messaging-web-service"
+		},
+		{
+			"path": "./apps/docker"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"node_modules/": true,
+      "apps/": true
+		},
+	},
+}
